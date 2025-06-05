@@ -1,0 +1,13 @@
+
+algoritmo "soma"
+var
+    N1, N2, S: inteiro
+inicio
+        Escreval("o algoritmo calculará a soma de dois numeros e mostra-la na tela")
+        Escreval("Digite um numero")
+        Leia(N1)
+        Escreval("Digite outro numero")
+        Leia(N2)
+        S <- N1 + N2
+        Escreval("A soma de ", N1," e", N2, " é igual a ", S )
+fimalgoritmo
