@@ -1,0 +1,27 @@
+algoritmo "Teste de algortimo"
+var
+   nome: caractere
+   idade: inteiro
+inicio
+      Escreval("======== FICHA DETRAN =========")
+      Escreval("===============================")
+      Escreval("Nome do Matriculado: ")
+      Leia (nome)
+      Escreval("idade: ")
+      Leia (idade)
+      Escreval("===============================")
+      Escreval("                               ")
+      Escreval("===============================")
+      Se (idade >= 18) entao
+      Escreval("Você está apto a dirigir")
+      Escreval("                               ")
+      Escreval("===============================")
+      Senao (idade <= 18)
+      
+      Escreval("Você não tem idade para dirigir")
+      Escreval("                               ")
+      Escreval("===============================")
+      
+      FimSe
+
+fimalgoritmo
