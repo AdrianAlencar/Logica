@@ -1,0 +1,23 @@
+algoritmo "emprestimo"
+var
+   emprestimo, dinheiro, parcela, total, totalj: real
+inicio
+       escreval("Qual será o valor do empréstimo? ")
+       leia (emprestimo)
+       dinheiro <- (emprestimo * 20) / 100
+       escreval("seus juros serão de R$: ", dinheiro)
+       
+       totalj <- emprestimo + dinheiro
+       escreval("o valor do seu empréstimo com juros é de R$: ", totalj)
+       
+       escreval("Em quantas vezes entre 0 e 10 deseja parcelar? ")
+       leia(parcela)
+       total <- totalj / parcela
+       escreval ("voce pagará R$: ", total," por mês")
+       escreval("                                                 ")
+       escreval("=================================================")
+       escreval("o valor total do seu empréstimo é de R$: ", totalj)
+       escreval("Quantidade de parcelas: ", parcela)
+       escreval("valor de cada parcela R$: ", total)
+       escreval("=================================================")
+fimalgoritmo
