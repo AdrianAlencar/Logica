@@ -1,0 +1,39 @@
+algoritmo "Calculo_IMC"
+var
+   peso, altura, IMC: real
+inicio
+   Escreva ("Peso (Kg): ")
+   leia (peso)
+   Escreva("altura (M): ")
+   leia(altura)
+   IMC <- peso / (altura * altura)
+   Escreval("IMC: ", IMC :5:2)
+
+   Se (IMC < 18.5) entao
+      Escreval("Voce está abaixo do peso minimo")
+
+   senao
+      Se (IMC >= 18.5) e (IMC <24.9) entao
+         Escreval(" voce está no peso ideal")
+
+
+      senao
+         Se (IMC > 25.0) e (IMC <29.9) entao
+            Escreval(" voce está com sobrepeso")
+
+         senao
+            Se (IMC > 30.0) e (IMC <34.9) entao
+               Escreval(" voce está com obesidade")
+
+            senao
+               Se (IMC > 40.0) entao
+                  Escreval(" voce tem obesidade morbida")
+
+
+
+               Fimse
+            Fimse
+         Fimse
+      Fimse
+   Fimse
+fimalgoritmo
