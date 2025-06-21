@@ -1,0 +1,50 @@
+algoritmo "Menu_pizzaria"
+var
+    pizza_escolhida: CARACTERE
+    nome_pizza: CARACTERE
+inicio
+    Escreval("==========================")
+    Escreval("       PIZZARIA FAZ BEM       ")
+    Escreval("==========================")
+    Escreval("   Seja muito bem vindo   ")
+    Escreval("")
+    Escreval("[1] Pizza de Mussarela")
+    Escreval("[2] Pizza de 4 Queijos")
+    Escreval("[3] Pizza de Pepperoni")
+    Escreval("[4] Pizza Doce")
+    Escreval("[5] Cancelar")
+    Escreval("")
+    Escreva("Digite o numero de sua escolha: ")
+    leia(pizza_escolhida)
+    
+    nome_pizza <- "opção não reconhecida"
+    
+    Escolha pizza_escolhida
+    
+            caso "1"
+            nome_pizza <- "Pizza de Musarrela"
+            
+            caso "2"
+            nome_pizza <- "pizza de 4 Queijos"
+            
+            caso "3"
+            nome_pizza <- "Pizza de Pepperoni"
+            
+            caso "4"
+            nome_pizza <- "Pizza doce"
+            
+            caso "5"
+            nome_pizza <- "Pedido Cancelado"
+            
+            outrocaso
+            nome_pizza <- "Opção inválida. Por favor, escolha um número de 1 a 5."
+            
+    fimescolha
+            
+            Escreval("===================================")
+            Escreval("     OBRIGADO PELA PREFERÊNCIA     ")
+            Escreval("Sabor escolhido: ", nome_pizza)
+            Escreval("")
+            Escreval("===================================")
+
+FimAlgoritmo
