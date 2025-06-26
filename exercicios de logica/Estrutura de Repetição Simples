@@ -1,12 +1,15 @@
 algoritmo "contagem"
 var
-     contador: inteiro
+   contador, numero: inteiro
 inicio
-       Contador <- 100
-       enquanto (contador <= 100) e (contador >= 0) faca
-       Escreval(contador)
-       contador <- contador - 10
-       fimenquanto
-       Escreval("Terminei a Contagem")
-       
-       fimalgoritmo
+    Escreval("Digite o até que numero deve ir a sequencia: ")
+    Leia(numero)
+    Escreval("=============================================")
+   Contador <- 0
+   enquanto (contador <= numero) e (contador >= 0) faca
+      Escreval(contador)
+      contador <- contador +1
+   fimenquanto
+   Escreval("Terminei a Contagem")
+
+fimalgoritmo
