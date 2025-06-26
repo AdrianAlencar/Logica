@@ -1,4 +1,4 @@
-algoritmo "semnome"
+algoritmo "contagem"
 var
      contador: inteiro
 inicio
