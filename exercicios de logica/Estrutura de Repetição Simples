@@ -1,0 +1,12 @@
+algoritmo "semnome"
+var
+     contador: inteiro
+inicio
+       Contador <- 100
+       enquanto (contador <= 100) e (contador >= 0) faca
+       Escreval(contador)
+       contador <- contador - 10
+       fimenquanto
+       Escreval("Terminei a Contagem")
+       
+       fimalgoritmo
